@@ -16,6 +16,9 @@ module.exports = {
       borderColor: {
         gray: 'rgba(0, 0, 0, 0.18)',
       },
+      gridTemplateRows: {
+        3: 'repeat(3, minmax(0, 1fr))',
+      },
     },
   },
   plugins: [],

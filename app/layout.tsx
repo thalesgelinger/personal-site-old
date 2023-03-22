@@ -12,12 +12,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div className="bg-gray flex justify-center items-center h-full">
-          <main className="flex py-[3.125rem] px-[3.125rem] h-full w-full flex-col lg:flex-row max-w-[80rem] min-h-screen bg-white">
+      <body className="bg-gray">
+        <main className="min-h-[100vh] max-w-[1280px] w-full bg-white  pl-[100px] pr-[50px] m-auto flex ">
+          <div className="h-full min-h-[720px] grid grid-cols-5 gap-[50px] pt-[100px]">
             {children}
-          </main>
-        </div>
+          </div>
+        </main>
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ export default function Post({ params }: PostProps) {
   const { content } = postsManager.getPostContent(params.slug);
   return (
     <>
-      <article className="flex-1 px-[3.125rem]">
+      <article className="h-full col-span-3 flex flex-col ">
         <Header showMe />
         <Markdown
           className="mt-[3.125rem]"
@@ -54,7 +54,7 @@ export default function Post({ params }: PostProps) {
           {content}
         </Markdown>
       </article>
-      <div className="flex flex-col w-[30rem] ">
+      <div className="col-span-2 h-full  max-h-[720px] flex flex-col ">
         <SocialMedias />
         <h2 className="text-center mt-12 text-[1.25rem]">Other publications</h2>
         <PostsPreview />
