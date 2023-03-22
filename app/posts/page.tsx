@@ -9,7 +9,7 @@ export default function Posts() {
           <PostsPreview onPostsPage />
         </div>
       </div>
-      <article className="col-span-2">
+      <article className=" min-[1200px]:col-span-2 col-span-3">
         <SocialMedias />
       </article>
     </>
